@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<%= favicon_link_tag "favicon1.png" %>
+		<title>Phone Clinic</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+  	<!-- header -->
+		<header>
+			<nav class="navbar navbar-default" data-spy="affix" data-offset-top="500">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><%= image_tag "fb.png", class: "img-responsive", alt: "IMG"%></a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#quick">Quick Services</a></li>
+							<li><a href="#service">Other Services</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a  class="btn btn-contact btn-lg hidden" data-toggle="modal" data-target="#myModal">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<p>Login</p>
+						</div>
+						<div class="modal-body">
+							<button type="button" class="btn btn-social btn-facebook">
+								<span class="fa fa-facebook fa-2x"></span> Facebook
+							</button>
+							<button type="button" class="btn btn-social btn-google pull-right">
+								<span class="fa fa-google-plus fa-2x"></span> Google Plus
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header -->
+    <%= yield %>
+    <!-- footer -->
+		<section class="section-name">
+			<footer class="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 col-sm-9">
+							<div class="footer-container">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.526449556369!2d-2.2543103841559646!3d53.49479058001035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1cdf17ebe7b%3A0xe644f4bf5c756992!2sWillow+St%2C+Manchester+M8%2C+UK!5e0!3m2!1sen!2s!4v1503916498535" width="100%" height="212" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-3">
+							<div class="footer-container">
+								<h4>CONTACTS</h4>
+								<ul class="footer-list">
+									<li>
+										<a href="#">
+											<span class="footer-icon-span"><i class="fa fa-map-marker"></i></span>
+											<span class="footer-text-span">1 Willow St, Manchester M8 9DY, UK</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="footer-icon-span"><i class="fa fa-mobile"></i></span>
+											<span class="footer-text-span">00447378800991</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="footer-icon-span"><i class="fa fa-envelope"></i></span>
+											<span class="footer-text-span">Phoneclinictoday@gmail.com</span>
+										</a>
+									</li>
+								</ul>
+								<div class="facebook-s">
+									<a class="btn btn-block style-block" href="#">
+										<span class="fa fa-facebook"></span>Contact us
+									</a>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="copyright">
+								<p>&copy; 2017 towkirbappy</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="footer-icons">
+								<p>Powered by <a href="http://www.suavistech.com">Suavis Tecnologies</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		<!-- footer -->
+  </body>
+</html>
