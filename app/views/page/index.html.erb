@@ -193,48 +193,46 @@
 			<p class="contact-text">You facing problem with your gadget? Please contact us and we will get back to you within in couple of minutes.</p>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
-				<form class="form-horizontal">
+			<form class="form-horizontal" action="/contact">
+				<div class="col-md-6">
 					<div class="form-group">
 						<label class="control-label col-sm-2" >Name:</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control form-style"  placeholder="Enter Name" name="email">
+							<input type="text" class="form-control form-style"  placeholder="Enter Name" name="name" required="true">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="control-label col-sm-2" >Email:</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control form-style"  placeholder="Enter Email" name="email">
+							<input type="email" class="form-control form-style"  placeholder="Enter Email" name="email" required="true">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="control-label col-sm-2" >Message:</label>
 						<div class="col-sm-10">
-							<textarea class="form-control form-style" placeholder="Enter Message"></textarea>
+							<textarea class="form-control form-style" placeholder="Enter Message" name="message" required="true"></textarea>
 
 						</div>
 					</div>
-				</form>
-			</div>
-			<div class="col-md-6">
-				<form class="form-horizontal" >
+				</div>
+				<div class="col-md-6">
 					<div class="form-group">
 						<label class="control-label col-sm-2" >Phone:</label>
 						<div class="col-sm-10">
-							<input type="number" class="form-control form-style"  placeholder="Enter Phone" name="email">
+							<input type="number" class="form-control form-style"  placeholder="Enter Phone" name="phone" required="true">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="control-label col-sm-2" >Adress:</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control form-style"  placeholder="Enter Home Adress" name="email">
+							<input type="text" class="form-control form-style"  placeholder="Enter Home Adress" name="address" required="true">
 						</div>
 					</div>
-				</form>
-			</div>
-			<div class="col-md-12 text-center">
-				<button class="btn btn-contact">send</button>
-			</div>
+				</div>
+				<div class="col-md-12 text-center">
+					<input type="submit" class="btn btn-contact" value="send">
+				</div>
+			</form>
 		</div>
 	</div>
 </section>
