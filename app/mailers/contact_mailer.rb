@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-	default from: "no.reply.suavis@gmail.com"
+  default from: "Phone Clinic<no.reply.suavis@gmail.com>"
 
   def send_email(name, email, phone, address, message)
     mails = ["fraz.ahsan17@gmail.com"]
@@ -8,6 +8,6 @@ class ContactMailer < ApplicationMailer
     @message = message
     @phone = phone
     @address = address
-    mail(to: mails.join(","), subject: 'New Contact Query')
+    mail(to: mails.join(","), subject: 'New Contact Query from Phone Clinic')
   end
 end
