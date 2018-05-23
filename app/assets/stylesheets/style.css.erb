@@ -475,27 +475,27 @@ footer{
 	padding: 20px 0px 30px 0px;
 	background-color: #070707;
 }
-footer .footer-container{
+ .footer-container{
 	float: left;
 	width: 100%;
 	margin-top: 20px;
 }
-footer .footer-container h4{
+ .footer-container h4{
 	font-size: 19px;
 	color: #028794;
 	text-transform: uppercase;
 	font-family:'MyriadPro-Regular';
 	margin: 0px;
 }
-footer .footer-list{
+ .footer-list{
 	margin-top: 30px;
 	float: left;
 	width: 100%;
 }
-footer .footer-list li{
+ .footer-list li{
 	margin-bottom: 8px;
 }
-footer .footer-list li a{
+ .footer-list li a{
 	font-size: 13px;
 	color: #ffffff;
 	font-family:'MyriadPro-Regular';
@@ -506,46 +506,46 @@ footer .fa-caret-right{
 	color: #028794;
 	margin-right: 10px;
 }
-footer .fa-map-marker,
-footer .fa-mobile,
-footer .fa-envelope{
+ .fa-map-marker,
+ .fa-mobile,
+ .fa-envelope{
 	color: #fff;
 	font-size: 16px;
 }
-footer .footer-icon-span{
+ .footer-icon-span{
 	width: 10%;
 	float: left;
 }
-footer .footer-text-span{
+.footer-text-span{
 	width: 90%;
 	float: left;
 	margin-bottom: 10px;
 }
-footer .copyright p{
+.copyright p{
 	font-size: 13px;
 	color: #ffffff;
 	font-family:'MyriadPro-Regular';
 	margin: 6px 0px 0px 0px;
 }
-footer .footer-icons{
+.footer-icons{
 	width: 100%;
 	text-align: right;
 	float: left;
 	padding-top: 7px;
 }
-footer .footer-icons ul li{
+.footer-icons ul li{
 	display: inline-block;
 }
-footer .footer-icons ul li a{
+.footer-icons ul li a{
 	color: #fff;
 	font-size: 14px;
 	margin: 1px;
 }
-footer .footer-icons ul li .fa-facebook{
+.footer-icons ul li .fa-facebook{
 	background-color: #0073bf;
 	padding: 6px 10px;	
 }
-footer .footer-icons ul li .fa-google-plus{
+.footer-icons ul li .fa-google-plus{
 	background-color: #fe5e5e;
 	padding: 6px;
 }
@@ -694,6 +694,7 @@ h5 {
 	float: left;
 	width: 100%;
 	padding: 50px 0;
+	height:400px;
 }
 .btn-lg{
 	border-radius: 0;
@@ -724,8 +725,8 @@ h5 {
 }
 .chat-c{
 	position: relative;
-	width: 280px;
-	height: 60px;
+	max-width:95%;
+	width: 350px;
 	border: 1px solid #ccc;
 	display: inline-block;
 	padding: 5px;
@@ -741,9 +742,8 @@ h5 {
 }
 .comment-name{
 	display: inline-block;
-	float: left;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 16px;
 	margin: 0;
 }
 .footer-icons p {
@@ -775,9 +775,9 @@ h5 {
 	color:#FFD700;
 }
 .comment-text{
-	font-size: 11px;
+	font-size: 18px;
 	margin: 5px 0 0px 0 ;
-	text-align: left;
+	text-align: center;
 	display: block;
 }
 .review{
@@ -791,7 +791,13 @@ h5 {
 	float: left;
 	height:500px;
 }
-@media only screen and (max-width: 800px) and (min-width: 501px) {
+
+@media only screen and (min-width: 1500px){
+.slider .slide img{
+	height:400px;
+}
+}
+@media only screen and (max-width: 800px) {
 	.aboutus-section .aboutus-detail{
 		margin-top: 0px;
 	}
@@ -829,7 +835,7 @@ h5 {
 	height:400px;
 	}
 }
-@media only screen and (max-width: 500px) and (min-width: 351px) {
+@media only screen and (max-width: 500px) {
 	header .navbar-nav {
 		margin-top: 0px; 
 	}
